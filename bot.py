@@ -13,7 +13,7 @@ def image_handler(update: Update, context: CallbackContext):
     photo_file = update.message.photo[-1].get_file()
     photo_url = photo_file.file_path
 
-    update.message.reply_text("⏳ جاري تحويل الصورة إلى أنمي...")
+    update.message.reply_text("⏳...جاري تحويل الصورة إلى أنمي")
 
     output_url = convert_to_anime(photo_url)
     if output_url:
